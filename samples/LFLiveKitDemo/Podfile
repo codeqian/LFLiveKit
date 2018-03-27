@@ -2,5 +2,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios,'7.0'
 
 target “LFLiveKitDemo” do
+#    用的为本地的
     pod 'LFLiveKit', :path => '../../.'
 end
