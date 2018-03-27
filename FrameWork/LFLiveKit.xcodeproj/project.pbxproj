@@ -22,6 +22,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2157345A2069EB1C0034E993 /* CZGPUImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 215734592069EB1C0034E993 /* CZGPUImage.h */; };
+		2157345B2069EB1C0034E993 /* CZGPUImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 215734592069EB1C0034E993 /* CZGPUImage.h */; };
 		84358FF41DD1FEB600811FC7 /* GLProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = 84358E871DD1FEB500811FC7 /* GLProgram.h */; };
 		84358FF51DD1FEB600811FC7 /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 84358E881DD1FEB500811FC7 /* GLProgram.m */; };
 		84358FF61DD1FEB600811FC7 /* GPUImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 84358E891DD1FEB500811FC7 /* GPUImage.h */; };
@@ -676,6 +678,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		215734592069EB1C0034E993 /* CZGPUImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZGPUImage.h; sourceTree = "<group>"; };
 		84358E871DD1FEB500811FC7 /* GLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLProgram.h; sourceTree = "<group>"; };
 		84358E881DD1FEB500811FC7 /* GLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLProgram.m; sourceTree = "<group>"; };
 		84358E891DD1FEB500811FC7 /* GPUImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImage.h; sourceTree = "<group>"; };
@@ -1568,6 +1571,7 @@
 				84D8B5A51D768B6E00752B56 /* LFLiveKit.h */,
 				84D8B5A61D768B6E00752B56 /* LFLiveSession.h */,
 				84D8B5A71D768B6E00752B56 /* LFLiveSession.m */,
+				215734592069EB1C0034E993 /* CZGPUImage.h */,
 				84D8B5A81D768B6E00752B56 /* objects */,
 				84D8B5B31D768B6E00752B56 /* publish */,
 				84358E851DD1FEB500811FC7 /* Vendor */,
@@ -1708,6 +1712,7 @@
 				8495F6801DB8F1EE00542124 /* LFGPUImageBeautyFilter.h in Headers */,
 				8495F6811DB8F1EE00542124 /* LFGPUImageEmptyFilter.h in Headers */,
 				8495F6891DB8F1EE00542124 /* LFStreamingBuffer.h in Headers */,
+				2157345B2069EB1C0034E993 /* CZGPUImage.h in Headers */,
 				8495F68A1DB8F1EE00542124 /* LFStreamRTMPSocket.h in Headers */,
 				8495F68B1DB8F1EE00542124 /* LFStreamSocket.h in Headers */,
 				8495F68C1DB8F1EE00542124 /* NSMutableArray+LFAdd.h in Headers */,
@@ -1874,6 +1879,7 @@
 				843590211DD1FEB600811FC7 /* GPUImageColorDodgeBlendFilter.h in Headers */,
 				843590771DD1FEB600811FC7 /* GPUImageHistogramEqualizationFilter.h in Headers */,
 				843590231DD1FEB600811FC7 /* GPUImageColorInvertFilter.h in Headers */,
+				2157345A2069EB1C0034E993 /* CZGPUImage.h in Headers */,
 				8435913D1DD1FEB600811FC7 /* GPUImageWhiteBalanceFilter.h in Headers */,
 				8435911F1DD1FEB600811FC7 /* GPUImageThresholdSketchFilter.h in Headers */,
 				843590E91DD1FEB600811FC7 /* GPUImageRGBOpeningFilter.h in Headers */,
@@ -2480,6 +2486,7 @@
 		8495F6711DB8F14600542124 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
@@ -2505,6 +2512,7 @@
 		8495F6721DB8F14600542124 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
@@ -2530,6 +2538,7 @@
 		84D003771DB8FE1000560583 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				DEVELOPMENT_TEAM = G497YX6CBT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2538,6 +2547,7 @@
 		84D003781DB8FE1000560583 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				DEVELOPMENT_TEAM = G497YX6CBT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2636,6 +2646,7 @@
 		84D8B3991D7574D600752B56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -2660,6 +2671,7 @@
 		84D8B39A1D7574D600752B56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
