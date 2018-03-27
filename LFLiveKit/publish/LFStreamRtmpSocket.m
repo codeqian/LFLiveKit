@@ -489,7 +489,8 @@ Failed:
             self.isConnecting = NO;
             self.isReconnecting = YES;
             dispatch_async(dispatch_get_main_queue(), ^{
-                 [self performSelector:@selector(_reconnect) withObject:nil afterDelay:self.reconnectInterval];
+                /// 参考https://github.com/LaiFengiOS/LFLiveKit/pull/254/commits/a4cf18e0b9bea6d90a677c5b243991d9b7cf3193
+                 [self performSelector:@selector(_delayedReconnect) withObject:nil afterDelay:self.reconnectInterval];
             });
            
         } else if (self.retryTimes4netWorkBreaken >= self.reconnectCount) {
@@ -501,6 +502,15 @@ Failed:
             }
         }
     });
+}
+//https://github.com/LaiFengiOS/LFLiveKit/pull/254/commits/a4cf18e0b9bea6d90a677c5b243991d9b7cf3193  // 防止阻塞ui
+- (void)_delayedReconnect {
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+
+
+    dispatch_async(self.rtmpSendQueue, ^{
+            [self _reconnect];
+        });
 }
 
 - (void)_reconnect{
